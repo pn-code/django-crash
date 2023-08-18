@@ -7,3 +7,6 @@ def index(request):
 
 def guest(request):
     return HttpResponse("Hello, guest!")
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name.capitalize()}!")
